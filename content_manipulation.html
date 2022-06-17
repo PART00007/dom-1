@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+	<title>Content Manipulation</title>
+</head>
+<body>
+	<h1 id="firstname">Hello</h1>
+	<div id="lastname">MASAI</div>
+	<p id="fullname">School</p>
+	<hr/>
+	<button onclick="setFirstName()">FIRSTNAME</button>
+	<button onclick="setLastName()">LASTNAME</button>
+	<button onclick="setFullName()">FIRSTNAME NAME</button>
+	<button onclick="resetDefaults()">RESET DEFAULTS</button>
+	<script type="text/javascript">
+		function setFirstName() {
+		var firstname=document.getElementById("firstname").innerText="parteek"
+        console.log(firstname);
+        
+		}
+
+		function setLastName() {
+			var lastname=document.getElementById("lastname").innerText="arora"
+        console.log(lastname);
+		}
+
+		function setFullName() {
+            var fullname=document.getElementById("fullname").innerText=firstname.innerText+" "+lastname.innerText
+        console.log(fullname);
+		}
+
+		function resetDefaults(){
+			// reset the firstname, lastname, and fullname to empty values
+          document.getElementById("firstname").innerText=""
+         
+           document.getElementById("lastname").innerText=""
+           document.getElementById("fullname").innerText=""
+
+		}
+	</script>
+</body>
+</html>
+</body>
+</html>
