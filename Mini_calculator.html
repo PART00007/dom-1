@@ -5,8 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-</head>
-<body>
+    <style>
+        #box{
+            display: flex;
+            margin:50px;
+
+        }
+        input{
+            padding: 15px;
+        }
+        #box2{
+            margin-left: 50px;
+        }
     
+    </style>
+</head>
+
+<body>
+    <h1>Mini calcy</h1>
+    <div id="box">
+        <input type="number" id="firstnum" placeholder="enter 1st number" >
+        <input type="number"  id="secondnum" placeholder="enter 2nd number">
+    </div>
+    <div id="box2">
+        <button onclick="add()">Add</button>
+        <button onclick="Subtract()">Subtract</button>
+        <button onclick="Division()">Division</button>
+        <button onclick="Multiplication()">Multiplication</button> 
+    </div>
+    <script>
+        
+        function add(){
+            var sum=0
+            var first=parseInt(document.querySelector("#firstnum").value)
+            var second=parseInt(document.querySelector("#secondnum").value)
+            
+            sum=first+second
+            alert(sum)
+        }
+        function subtract(){
+            var sum=0
+            var first=parseInt(document.querySelector("#firstnum").value)
+            var second=parseInt(document.querySelector("#secondnum").value)
+            
+            sum=first-second
+            alert(sum)
+        }
+        function Division(){
+            var sum=0
+            var first=parseInt(document.querySelector("#firstnum").value)
+            var second=parseInt(document.querySelector("#secondnum").value)
+            
+            sum=first/second
+            alert(sum)
+        }
+        function Multiplication(){
+            var sum=0
+            var first=parseInt(document.querySelector("#firstnum").value)
+            var second=parseInt(document.querySelector("#secondnum").value)
+            
+            sum=first*second
+            alert(sum)
+        }
+        
+    </script>
 </body>
 </html>
